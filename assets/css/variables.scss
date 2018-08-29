@@ -1,0 +1,89 @@
+$h: h !default;
+
+$font: 'Open Sans', sans-serif;
+$primary: #fff;
+$secondary: #000;
+
+$primary-D: ($primary, 20%);
+$primary-D2: ($primary, 30%);
+
+$secondary-D: ($secondary, 20%);
+$secondary-D2: ($secondary, 30%);
+
+$fs-text: 19px;
+$fs-title: 36px, 34px, 32px, 30px, 28px;
+
+// font size tablet
+$t-fs-text: 15px;
+$t-fs-title: 30px, 28px, 26px, 24px, 22px;
+
+// font size mobile
+$m-fs-text: 13px;
+$m-fs-title: 25px, 23px, 21px, 19px, 17px;
+
+@for $i from 1 through 5 {
+  #{$h}#{$i} {
+    font-size: nth($m-fs-title, $i);
+    i {
+      font-size: nth($m-fs-title, $i);
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  @for $i from 1 through 5 {
+    #{$h}#{$i} {
+      font-size: nth($t-fs-title, $i);
+      p,
+      li,
+      object a,
+      span,
+      i {
+        font-size: nth($t-fs-title, $i);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  @for $i from 1 through 5 {
+    #{$h}#{$i} {
+      font-size: nth($fs-title, $i);
+      p,
+      li,
+      object a,
+      span,
+      i {
+        font-size: nth($fs-title, $i);
+      }
+    }
+  }
+}
+
+p,
+li,
+object a,
+span,
+i {
+  font-size: $m-fs-text;
+}
+
+@media screen and (min-width: 801px) {
+  p,
+  li,
+  object a,
+  span,
+  i {
+    font-size: $t-fs-text;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  p,
+  li,
+  object a,
+  span,
+  i {
+    font-size: $fs-text;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "azium-loisirs",
+  "version": "1.0.0",
+  "description": "Azium loisirs code",
+  "author": "Minaoui Ali",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "buefy": "^0.6.6",
+    "bulma": "^0.6.2",
+    "chromelogger": "^1.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
+    "nuxt": "^1.0.0",
+    "nuxt-buefy": "^0.1.0",
+    "on-headers": "^1.0.1",
+    "vue-axios": "^2.1.1",
+    "vue-google-autocomplete": "^1.1.0",
+    "vue-lodash": "^2.0.0",
+    "vue-star-rating": "^1.6.0",
+    "vuexfire": "^2.3.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^6.0.7"
+  },
+  "engines": {
+    "node": "8.11.2"
+  }
+}
