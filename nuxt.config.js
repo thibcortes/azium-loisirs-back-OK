@@ -95,13 +95,13 @@ module.exports = {
       defaultIconPack: 'far'
     }]
   ],
-  generate: {
+  /*generate: {
     routes: function () {
-      return axios.get('https://api.azium.fr/wp-json/wp/v2/posts').then((res) => {
+      return axios.get('http://63d0a33b9a.url-de-test.ws/wp-json/wp/v2/posts').then((res) => {
         return res.data.map((post) => {
           return '/actualites/' + post.slug
         })
       })
     }
-  }
+  }*/
 }
