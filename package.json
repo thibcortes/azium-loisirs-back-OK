@@ -29,6 +29,7 @@
     "vue-axios": "^2.1.1",
     "vue-google-autocomplete": "^1.1.0",
     "vue-lodash": "^2.0.0",
+    "vue-rate-it": "^2.1.0",
     "vue-star-rating": "^1.6.0",
     "vuexfire": "^2.3.0",
     "xmlhttprequest": "^1.8.0"

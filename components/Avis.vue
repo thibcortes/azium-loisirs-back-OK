@@ -12,16 +12,7 @@
                     <h3>{{this.content.boxAvis['quote-avis']}}</h3>
                     <p>{{this.content.boxAvis['text-avis']}}</p>
                         <div class="starbox">
-                           <!--  <stars 
-                            v-bind:star-size="35"
-                            v-bind:rating="rating"
-                            v-bind:read-only="true"
-                            v-bind:increment="0.5"
-                            v-bind:show-rating="false"
-                            v-bind:rounded-corners="true"
-                            v-bind:active-color="'#222'"
-                            v-bind:border-color="'#ffffff00'"
-                            ></stars> -->
+                           
 
                         </div>
                     <div class="button-note">

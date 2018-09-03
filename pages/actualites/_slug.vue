@@ -1,6 +1,7 @@
 <template>
     <div>
         {{post.title}}
+        {{post.content}}
         <a href="/actualites">Retour aux actualités</a>
     </div>
 </template>

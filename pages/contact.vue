@@ -9,7 +9,7 @@ export default {
     
     async asyncData() {
         let res = await api.getPageBySlug('contact')
-        console.log(res)
+        
         return {
             nom: res.boxContact.nom,
             prenom: res.boxContact.prenom,
