@@ -27,29 +27,23 @@ export default {
 #footer {
   background-color: grey;
   bottom: 0;
-  margin-top:10px;
   text-decoration: none;
   color: white;
   width: 100%;
-    background-color: #2f2f2f;
-    padding: 5px 20px;
-   
-    border-bottom: 1px solid #C7C7C7;
-    padding-bottom: 25px;
-
-    ul{
-        text-align:center;
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        li{
-            margin: 1rem;
-            font-size:13pt;
-            a{
-                color:#c7c7c7;
-            }
-        }
+  background-color: #2f2f2f;
+  padding: 5px 20px;
+  ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    li {
+      margin: 1rem;
+      font-size: 13pt;
+      a {
+        color: #c7c7c7;
+      }
     }
-    
+  }
 }
 </style>

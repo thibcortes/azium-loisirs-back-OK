@@ -1,12 +1,17 @@
 <template>
-    <div id="slider">
-        <img src='http://via.placeholder.com/1000x250'>
-    </div>
+  <div id="slider">
+    <img src='http://via.placeholder.com/1000x250'>
+  </div>
 </template>
 
 <script>
 export default {
-
+  props: {
+    items: {
+      type: Array,
+      default: null
+    }
+  }
 }
 </script>
 
@@ -14,6 +19,8 @@ export default {
 #slider {
   img {
     width: 100%;
+    margin: auto;
+    display: block;
     height: auto;
   }
 }

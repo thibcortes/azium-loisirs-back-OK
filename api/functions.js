@@ -10,9 +10,9 @@ const formatPost = (p) => {
         content: removeTags(p.content.rendered),
     }
     if (p._embedded !== undefined) {
-        if(p._embedded['wp:featuredmedia'] !== undefined){
-
+        if (p._embedded['wp:featuredmedia'] !== undefined) {
             post.image = p._embedded['wp:featuredmedia'][0].source_url
+            post.alt = p._embedded['wp:featuredmedia'][0].alt
         }
     }
     if (p.cmb2 !== undefined) {

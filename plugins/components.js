@@ -9,8 +9,6 @@ import Formulaire from '~/components/Formulaire'
 import Avis from '~/components/Avis'
 import Tarifs from '~/components/Tarifs'
 
-
-
 Vue.component('page-title', PageTitle)
 Vue.component('site-header', SiteHeader)
 Vue.component('site-footer', SiteFooter)
@@ -20,6 +18,5 @@ Vue.component('tableau-age-taille', TableauAgeTaille)
 Vue.component('formulaire', Formulaire)
 Vue.component('avis', Avis)
 Vue.component('tarifs', Tarifs)
-
 
 

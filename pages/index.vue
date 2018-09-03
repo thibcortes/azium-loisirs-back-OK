@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-    <h1>BIENVENUE</h1>
     <slider></slider>
     <mosaic id="mosaic"></mosaic>
   </div>

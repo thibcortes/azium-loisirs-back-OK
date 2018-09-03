@@ -1,7 +1,7 @@
 $h: h !default;
 
 $font: 'Open Sans', sans-serif;
-$primary: #fff;
+$primary: #D84551;
 $secondary: #000;
 
 $primary-D: ($primary, 20%);
@@ -9,6 +9,9 @@ $primary-D2: ($primary, 30%);
 
 $secondary-D: ($secondary, 20%);
 $secondary-D2: ($secondary, 30%);
+
+$tablet: 768px;
+$desktop: 1216px;
 
 $fs-text: 19px;
 $fs-title: 36px, 34px, 32px, 30px, 28px;
