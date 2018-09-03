@@ -8,21 +8,24 @@ const formatPost = (p) => {
         image: null,
         title: removeTags(p.title.rendered) || null,
         content: removeTags(p.content.rendered),
-        age: p.cmb2.Activites.age_taille,
-        buttonLabel: p.cmb2.Activites.label_bouton,
-        buttonLink: p.cmb2.Activites.lien_bouton,
-        redirection: p.cmb2.Mosaic.redirection,
-        classBloc: p.cmb2.Mosaic.class || null,
-        box_tarif: p.cmb2['Activite-enfant-tarifs-details'],
-        box_loisirs: p.cmb2['loisirs'] || null,
-        box_tarifs_anniv: p.cmb2['tarifs_anniversaire'] || null,
-        boxAvis: p.cmb2['avis'] || null,
-        boxEnfant: p.cmb2['Activite-enfant-presentation'] || null,
-        
-        
     }
     if (p._embedded !== undefined) {
-        post.image = p._embedded['wp:featuredmedia'][0].source_url
+        if(p._embedded['wp:featuredmedia'] !== undefined){
+
+            post.image = p._embedded['wp:featuredmedia'][0].source_url
+        }
+    }
+    if (p.cmb2 !== undefined) {
+        post.age = p.cmb2.Activites.age_taille
+        post.buttonLabel = p.cmb2.Activites.label_bouton
+        post.buttonLink = p.cmb2.Activites.lien_bouton
+        post.redirection = p.cmb2.Mosaic.redirection
+        post.classBloc = p.cmb2.Mosaic.class || null
+        post.box_tarif = p.cmb2['Activite-enfant-tarifs-details']
+        post.box_loisirs = p.cmb2['loisirs'] || null
+        post.box_tarifs_anniv = p.cmb2['tarifs_anniversaire'] || null
+        post.boxAvis = p.cmb2['avis'] || null
+        post.boxEnfant = p.cmb2['Activite-enfant-presentation'] || null
     }
     return post
 }

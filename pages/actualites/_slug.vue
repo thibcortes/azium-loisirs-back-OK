@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{post.title.rendered}}
+        {{post.title}}
         <a href="/actualites">Retour aux actualités</a>
     </div>
 </template>
@@ -9,9 +9,9 @@
 import api from '~/api'
 export default {
     async asyncData(context) {
-        let res = await api.getPostBySlug(context.params.slug)
+        let res = await api.getOneCPT('posts', context.params.slug)
         return {
-            post: res.data[0]
+            post: res
         }
     },
     computed: {
