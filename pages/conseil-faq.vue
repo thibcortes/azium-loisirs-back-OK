@@ -7,7 +7,7 @@
                     <p>AZIUM<sup>1</sup></p>
                 </div>
                 <p id="hor" style=" position:absolute; top:95px;">10h</p>
-                <p id="hor" style=" position:absolute; top:95px; right:15px">23h</p>
+                <p id="hor" style=" position:absolute; top:95px; right:15px">23h30</p>
                 <div id="horaire" style="background-color:#3eabd3">
                     <p>UNIVERS ENFANT<sup>1</sup></p>
                 </div>
@@ -30,7 +30,7 @@
                 <p id="hor" style=" position:absolute; top:415px; right:95px">18h30</p>
 
                 <div id="detail">
-                <p>(1) NOCTURNE jusqu’à minuit le mardi soir. Fermeture à 22h le dimanche soir. </p>
+                
                 <p>(2) Hors vacances : Mercredi/Samedi/Dimanche. Pendant les vacances : Tous les jours</p>
                 </div>
                 

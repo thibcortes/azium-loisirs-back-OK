@@ -3,7 +3,6 @@
         <page-title icon="fas fa-birthday-cake" :title="page.title"></page-title>
         <div id="content">
             {{page.content}}
-        </div>
         <div id='tarifs'>
             <ul>
                 <li v-for="(tarif, i) in tarifs" :key='i'>
@@ -29,6 +28,7 @@
                     </div>
                 </li>
             </ul>
+        </div>
         </div>
     </div>
 </template>

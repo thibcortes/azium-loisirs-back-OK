@@ -26,6 +26,8 @@ const formatPost = (p) => {
         post.box_tarifs_anniv = p.cmb2['tarifs_anniversaire'] || null
         post.boxAvis = p.cmb2['avis'] || null
         post.boxEnfant = p.cmb2['Activite-enfant-presentation'] || null
+        post.boxSlide = p.cmb2.slider || null
+        post.boxTarifsGrp = p.cmb2['Badge-tarif'] || null
     }
     return post
 }

@@ -66,6 +66,7 @@ ul.list-mosaic {
         height: auto;
         margin: auto;
       }
+    
       .bloc-content {
         position: absolute;
         z-index: 1;
