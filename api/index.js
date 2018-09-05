@@ -33,6 +33,12 @@ export default {
       return functions.formatPage(res.data[0])
     })
   },
+  getPageAndImageBySlug(slug) {
+    return axios.get(`${v2}pages?slug=${slug}&_embed`).then(res => {
+      
+      return functions.formatPage(res.data[0])
+    })
+  },
   getMenus() {
     return axios.get(`${basic}menus/v1/menus`)
   },
